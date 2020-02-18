@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather-API</title>
+    <link rel="stylesheet" href="style/WeatherStyle.css">
+    
+</head>
+<body onload="callAPI1(), callAPI2(),callAPI3()"  >
+    <div class="all">
+    <img src="logoz.jfif" class="img" alt="">    
+    <div class="top-bar">   
+        
+            <div class="menu">
+                <ul>
+                    <li><a href="https://www.bbc.com/weather" target="_blank">Weather News</a></li>
+                    <li><a href="">About</a></li>                    
+                </ul>
+            </div>      
+    </div>
+    <br>
+    
+    
+    <div class="container" id ="cont">        
+        <div class="input-boxes"><span>Try Your Self</span>         
+            <input class="input" type="text" id="name" placeholder="Enter a city name"/>
+            <button type="submit" value="Send" id="submit">Check</button>                         
+        </div>        
+   </div> 
+
+    <hr>
+
+
+
+    <div class="main-content">
+        <div class="main-items1">
+           <h3 id="city0"></h3>
+            <div  id ="W0">
+            </div>
+        </div>
+
+        <div class="main-items">
+            <h3  id="city1"></h3> 
+            <div class="content" id ="W1">
+            </div>
+        </div>
+
+        <div class="main-items">
+            <h3 id="city2"></h3>
+            <div class="content" id="W2">
+            </div>
+        </div>
+
+        <div class="main-items">
+            <h3 id="city3"></h3>
+            <div class="content"  id="W3">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>   
+    <script src="WeatherJS.js"></script>
+</body >
+</html>
